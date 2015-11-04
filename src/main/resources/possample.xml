@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+        <WorkstationID>POS5</WorkstationID>
+        <SequenceNumber>4294967295</SequenceNumber>
+        <RetailTransaction>
+            <ItemCount>1</ItemCount>
+            <LineItem>
+                <Sale ItemType="stock">
+                    <POSIdentity>
+                        <POSItemID>ITEM1234567</POSItemID>
+                    </POSIdentity>
+                    <ActualSalesUnitPrice>1.63</ActualSalesUnitPrice>
+                    <ExtendedAmount>4.89</ExtendedAmount>
+                    <Quantity>3</Quantity>
+                </Sale>
+                <Points>
+                    <PointRate>10</PointRate>
+                </Points>
+            </LineItem>
+            <LineItem>
+                <Tender TypeCode="Sale">
+                    <Amount>4.89</Amount>
+                    <Authorization>
+                        <RequestedAmount>4.89</RequestedAmount>
+                        <AuthorizationCode>234</AuthorizationCode>
+                        <ReferenceNumber>123</ReferenceNumber>
+                    </Authorization>
+                    <CreditDebit CardType="Debit">
+                        <IssuerIdentificationNumber>1234567887654321</IssuerIdentificationNumber>
+                        <CardHolderName>M Lalapet</CardHolderName>
+                        <PrimaryAccountNumber>1234567890</PrimaryAccountNumber>
+                    </CreditDebit>
+                    <TenderID TenderType="CreditDebit"/>
+                </Tender>
+            </LineItem>
+            <Total TotalType="TransactionGrandAmount">4.89</Total>
+        </RetailTransaction>
+    </Transaction>
+</POSLog>
